@@ -32,7 +32,7 @@ function App(){
     let listCarre = [];
 
     const resultCarre = await AirtableApi();
-
+ 
     resultCarre.data.records.forEach(carre => {
       listCarre.push({id: carre.id, Color: carre.fields.Color})
     })
